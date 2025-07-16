@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Text Background</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background:black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+     h1 {
+      font-size: 5rem;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      background: linear-gradient(270deg, pink, slateblue, green, yellow);
+      background-size: 800% 800%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 6s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <h1>deekshitha</h1>
+</body>
+</html>
+
